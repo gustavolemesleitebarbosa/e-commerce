@@ -1,9 +1,9 @@
 
-import React, { useRef } from 'react';
 import Link from 'next/link';
-import { AiOutlineMinus, AiOutlinePlus, AiOutlineLeft, AiOutlineShopping } from 'react-icons/ai';
-import { TiDeleteOutline } from 'react-icons/ti';
+import React, { useRef } from 'react';
 import toast from 'react-hot-toast';
+import { AiOutlineLeft, AiOutlineMinus, AiOutlinePlus, AiOutlineShopping } from 'react-icons/ai';
+import { TiDeleteOutline } from 'react-icons/ti';
 import getStripe from '../lib/getStripe';
 
 import { useStateContext } from '../context/stateContext';
@@ -27,7 +27,8 @@ const Cart = () => {
     
     const data = await response.json();
 
-    toast.loading('Redirecting...');
+    toast.loading('Redirecting page...');
+
 
     stripe.redirectToCheckout({ sessionId: data.id });
   }
