@@ -16,6 +16,12 @@ a {
   text-decoration: none;
 }
 
+.home-page {
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 .main-container{
 max-width: 1400px; 
 margin: auto;
