@@ -1,9 +1,9 @@
-import React, {useState, useEffect} from 'react'
-import { client, urlFor } from '../../lib/client'
-import { AiOutlineMinus, AiOutlinePlus, AiFillStar, AiOutlineStar } from 'react-icons/ai'
-import { Product } from '../../components'
-import {useStateContext} from '../../context/stateContext'
 import { useRouter } from 'next/router'
+import React, { useEffect, useState } from 'react'
+import { AiFillStar, AiOutlineMinus, AiOutlinePlus, AiOutlineStar } from 'react-icons/ai'
+import { Product } from '../../components'
+import { useStateContext } from '../../context/stateContext'
+import { client, urlFor } from '../../lib/client'
 
 const ProductDetails = ({ product, products }) => {
   const { image, name, details, price } = product
@@ -19,6 +19,7 @@ const ProductDetails = ({ product, products }) => {
   useEffect(() => {
     const exitingFunction = () => {
        setQty(1)
+       setIndex(0)
     };
     router.events.on('routeChangeStart', exitingFunction );
     return () => {
