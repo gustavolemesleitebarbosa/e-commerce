@@ -1,4 +1,4 @@
-This is a NextJs application for selling headphones and speakers. It uses stripe integration for payment method. It uses sanity CMS to manage content and the data is fetched from sanity via GROQ queries: (https://www.sanity.io/docs/groq). To run the project just follow standard NextJs commands using yarn,npm or pnpm. 
+This is a NextJs e-commerce application for selling headphones and speakers. It uses stripe integration for payment method. It uses sanity CMS to manage content and the data is fetched from sanity via GROQ queries: (https://www.sanity.io/docs/groq). To run the project just follow standard NextJs commands using yarn,npm or pnpm. 
 
 ## Getting Started
 
